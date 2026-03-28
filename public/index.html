@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>TeamDead Script AI</title>
+    <link rel="stylesheet" href="/styles.css" />
+  </head>
+  <body>
+    <main class="container">
+      <h1>TeamDead Script AI</h1>
+      <p class="subtitle">Generador, corrector y optimizador de scripts completos para Roblox Team Deathmatch.</p>
+
+      <label for="mode">Modo</label>
+      <select id="mode">
+        <option value="generate">Generar sistema completo</option>
+        <option value="fix">Corregir errores</option>
+        <option value="optimize">Optimizar scripts</option>
+        <option value="autocomplete">Autocompletar en tiempo real</option>
+      </select>
+
+      <label for="prompt">Prompt</label>
+      <textarea id="prompt" rows="5" placeholder="Ejemplo: Crea un sistema Team Deathmatch con respawn, marcador de kills y GUI de HUD."></textarea>
+
+      <label for="currentCode">Código actual (opcional)</label>
+      <textarea id="currentCode" rows="10" placeholder="Pega aquí tu script Lua actual para corregir u optimizar."></textarea>
+
+      <div class="actions">
+        <button id="generateBtn">Generar / Ejecutar</button>
+        <button id="copyBtn">Copiar código</button>
+      </div>
+
+      <label for="result">Código generado</label>
+      <textarea id="result" rows="18" readonly></textarea>
+
+      <p id="status" class="status"></p>
+    </main>
+
+    <script type="module" src="/app.js"></script>
+  </body>
+</html>
